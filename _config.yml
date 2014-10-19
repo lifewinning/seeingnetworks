@@ -1,0 +1,12 @@
+# Site settings
+title: Seeing Networks
+email: lifewinning@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A rough field guide to network infrastructure in cities and elsewhere.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://seeingnetworks.in" # the base hostname & protocol for your site
+twitter_username: lifewinning
+github_username:  lifewinning
+
+# Build settings
+markdown: kramdown

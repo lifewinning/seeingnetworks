@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="content">
+  {% for category in site.data.categories %}
+  <div class="container">
+    <div class="col-md-12">
+    <h1>{{category.title}}</h1>
+    </div>
+     {% for data in site.data.city %}
+     {% if data.category == category.category %}
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1"><img src="{{data.img}}" class="img-responsive"></div>
+        <div class="col-md-7 col-md-offset-1">
+          <h2>{{data.name}}</h2>
+          <p>{{data.desc}}</p>
+        </div>
+      </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
