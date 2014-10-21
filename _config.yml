@@ -2,7 +2,7 @@
 title: Seeing Networks
 email: lifewinning@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A rough field guide to network infrastructure in cities and elsewhere.
+    A rough field guide to network infrastructures. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://seeingnetworks.in" # the base hostname & protocol for your site
 twitter_username: lifewinning

@@ -2,15 +2,19 @@
 @orange:#faa627; 
 @darkorange: #DA8455;
 
+body{background-color: @orange;}
 
-.jumbotron{
+.intro{
 	min-height: 100vh;
 	margin:0!important;
-	background-image: url('/assets/images/grunge_wall.png');
-	h1, h2, h3, h4, h5, h6{
-		color: @orange;
-	}
-	p{color:white;}
+	background-image: url('/img/noisy.png');
+	h1 {font-size: 80px;}
+	p {font-size: 18px!important;}
+}
+.section{
+	background-color: @darkorange;
+	h1, h2, h3, h4, h5, h6, p {color: #ddd;}
+	min-height: 100vh;
 }
 
 .nav ul, li{
@@ -28,23 +32,15 @@ a{
 	padding: 5%;
 }
 h1, h2, h3, h4, h5, h6{
-	font-family: "brandon-grotesque", sans-serif!important;
-	text-transform: uppercase;
-	font-weight: 700;
-	text-align: center;
+	font-family: "garamond-premier-pro", Georgia, sans-serif;
 }
+
 p{
-  font-family: "adobe-text-pro", serif;
+  font-family: "brandon-grotesque", Helvetica, sans-serif;
   }
 
- .intro{
- 	background-color: @orange;
- 	margin-top: 2.5%;
- 	margin-bottom: 2.5%;
- }
-
  .object{
- 	background-color: lighten(@orange, 15%);
+ 	background-image: url('/img/noisy.png');
  	padding: 2.5%;
  	margin: 1%;
  }
