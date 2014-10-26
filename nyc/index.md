@@ -16,7 +16,7 @@ intro: "New York's network infrastructure is a lot like the city itself: messy, 
      {% if data.category == category.category %}
        {% if data.img != null %}
         <div class="row">
-          <div class="col-md-3 object"><img src="{{data.img}}" class="img-responsive"></div>
+          <div class="col-md-3 object"><img src="/{{data.img}}" class="img-responsive"></div>
           <div class="col-md-8">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
