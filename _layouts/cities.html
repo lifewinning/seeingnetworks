@@ -12,12 +12,14 @@
   <div class="jumbotron intro">
   <h1>Seeing Networks in {{page.title}}</h1>
   
-  <h2>{{ page.intro }}</h2>
+  <h2>{{ content }}</h2>
 
   </div>
 
 </header>
-{{content}}
+
+{% include {{page.template}} %}
+
 </body>
 
 
