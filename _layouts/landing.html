@@ -5,7 +5,8 @@
 
   <body>
   <div class="jumbotron intro">
-
+  <div class="container-fluid">
+  <div class="col-md-10 col-md-offset 2">
   <h1>{{ site.title }}</h1>
   <h2>{{ site.description }}</h2>
 	<p><em>How do you see the internet?</em></p>
@@ -25,8 +26,9 @@
   {% for data in site.data.cities %}
    <a href="{{ data.link }}">{{data.name}}</a>
   {% endfor %}
+  </div>
 </div>
-
+</div>
   </div>
 
   </body>

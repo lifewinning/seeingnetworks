@@ -25,10 +25,12 @@
 <header>
 
   <div class="jumbotron intro">
+  <div class="container-fluid">
   <h1>Seeing Networks in {{page.title}}</h1>
-  
+  <div class="col-md-10 col-md-offset-1">
   <h2>{{ content }}</h2>
-
+  </div>
+  </div>
   </div>
 
 </header>
@@ -44,15 +46,15 @@
      {% if data.category == category.category %}
        {% if data.img != null %}
         <div class="row">
-          <div class="col-md-3 object"><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
-          <div class="col-md-8">
+          <div class="col-md-3 col-md-offset-1 object"><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
+          <div class="col-md-7">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
           </div>
         </div>
       {% else %}
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-10 col-md-offset-1">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
           </div>
