@@ -52,14 +52,14 @@
        {% if data.img != null %}
         <div class="row">
           <div class="object col-md-3 col-md-offset-1"><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
-          <div class="col-md-7">
+          <div class="col-md-7 desc">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
           </div>
         </div>
       {% else %}
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-10 col-md-offset-1 desc">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
           </div>
