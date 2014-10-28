@@ -1,3 +1,38 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{site.url}}">{{ site.title }}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       {% for category in site.data.nyc-meta %}
+          <li><a href="#{{category.category}}">{{ category.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<header>
+
+  <div class="jumbotron intro">
+  <h1>Seeing Networks in {{page.title}}</h1>
+  
+  <h2>{{ content }}</h2>
+
+  </div>
+
+</header>
+
 <div id="content">
   {% for category in site.data.nyc-meta %}
     <div class="jumbotron section" id="{{category.category}}">
@@ -9,7 +44,7 @@
      {% if data.category == category.category %}
        {% if data.img != null %}
         <div class="row">
-          <div class="col-md-3 object"><img src="{{data.img}}" class="img-responsive"></div>
+          <div class="col-md-3 object"><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
           <div class="col-md-8">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
