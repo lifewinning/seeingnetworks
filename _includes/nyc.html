@@ -26,8 +26,9 @@
 
   <div class="jumbotron intro">
   <div class="container-fluid">
-  <h1>Seeing Networks in {{page.title}}</h1>
   <div class="col-md-10 col-md-offset-1">
+  <h1>Seeing Networks in {{page.title}}</h1>
+  
   <h2>{{ content }}</h2>
   </div>
   </div>
@@ -38,15 +39,19 @@
 <div id="content">
   {% for category in site.data.nyc-meta %}
     <div class="jumbotron section" id="{{category.category}}">
+    <div class="container-fluid">
+    <div class="col-md-10 col-md-offset-1">
     <h1>{{category.title}}</h1>
-    <span id="mark"><p>{{category.summary}}</p></span>
+    <span id="mark"><h2>{{category.summary}}</h2></span>
+    </div>
+    </div>
     </div>
       <div class="container-fluid">
      {% for data in site.data.nyc %}
      {% if data.category == category.category %}
        {% if data.img != null %}
         <div class="row">
-          <div class="col-md-3 col-md-offset-1 object"><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
+          <div class="object col-md-3 col-md-offset-1 "><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
           <div class="col-md-7">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
