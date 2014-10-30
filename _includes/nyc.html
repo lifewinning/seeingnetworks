@@ -49,7 +49,7 @@
       <div class="container-fluid">
      {% for data in site.data.nyc %}
      {% if data.category == category.category %}
-       {% if data.img != null %}
+       {% if data.img != 'null' %}
         <div class="row">
           <div class="object col-md-3 col-md-offset-1"><img src="{{site.url}}/{{data.img}}" class="img-responsive"></div>
           <div class="col-md-6 desc">
