@@ -58,8 +58,9 @@
           </div>
         </div>
       {% else %}
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 desc">
+      <div class="row">
+          <div class="desc col-md-3 col-md-offset-1"><img src="http://api.tiles.mapbox.com/v4/lifewinning.map-53lvkbot/geojson{%raw%}({{%endraw%}{{data.coords | uri_escape}}{%raw%}}){%endraw%}/{{data.lon}},{{data.lat}},18/640x640@2x.png?access_token=pk.eyJ1IjoibGlmZXdpbm5pbmciLCJhIjoiYWZyWnFjMCJ9.ksAPTz72HyEjF2AOMbRNvg" class="img-responsive"></div>
+          <div class="col-md-6 desc">
             <h2>{{data.name}}</h2>
             <p>{{data.desc}}</p>
           </div>
