@@ -14,7 +14,7 @@ background-color: @gray;
 	min-height: 100vh;
 	margin:0!important;
 	background-image: url('/img/noisy.png');
-	h1 {font-size: 100px;}
+	h1 {font-size: 6.5em;}
 	p {font-size: 18px!important;}
 }
 .section{
@@ -36,6 +36,9 @@ background-color: @gray;
 	text-transform: uppercase;
 	font-weight: 700;
 }
+.navbar-brand{
+	font-family: "garamond-premier-pro", serif!important;
+}
 a{
 	color: @darkorange;
 	text-decoration: none;
@@ -49,6 +52,11 @@ a{
 	background-color: @orange;
 	padding: 2.5%;
 	margin: 1%;
+	a {
+		color: @gray;
+		text-decoration: none;
+		&:hover{color: lighten(@gray, 10%); text-decoration: none;}
+	}
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "garamond-premier-pro", Georgia, sans-serif;
