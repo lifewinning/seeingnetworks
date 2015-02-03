@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Thank you!
 ---
 
-Thank you so, so much for helping with the print edition of the NYC Internet Infrastructure Field Guide! 
+#Thank you!
 
-[Back to the online guide](http://seeingnetworks.in/nyc)
+##Thank you so, so much for helping make the print edition of the NYC Internet Infrastructure Field Guide into a real thing! 
+
+##[Back to the online guide](http://seeingnetworks.in/nyc)
