@@ -3,3 +3,4 @@ _site
 .DS_Store
 .~lock.*
 img/nyc/guide/original/
+*.psd

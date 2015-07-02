@@ -5,9 +5,7 @@ layout: page
 
 <img src="/img/nyc/guide/cover.jpg" class="img-responsive">
 
-#[Go here to pre-order this book.](https://app.moonclerk.com/pay/ljgls7hoch)
-
-##(Or just like, give me money if you want to see it made.)
+#[Go here to buy this book.](https://app.moonclerk.com/pay/ljgls7hoch)
 
 An online field guide to network infrastructure is an OK way to share information about infrastructure, but when you are out in the world actually seeing infrastructure maybe you don't want to pull up some website on your phone.
 
