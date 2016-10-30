@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-       {% for category in site.data.nyc-meta %}
+       {% for category in site.data[page.cityMeta] %}
           <li><a href="#{{category.category}}">{{ category.title }}</a></li>
       {% endfor %}
           <li><a href="/guide">Print Edition</a></li>
@@ -38,7 +38,8 @@
 </header>
 
 <div id="content">
-  {% for category in site.data.nyc-meta %}
+
+  {% for category in site.data[page.cityMeta] %}
     <div class="jumbotron section" id="{{category.category}}">
     <div class="container-fluid">
     <div class="col-md-10 col-md-offset-1">
@@ -48,7 +49,7 @@
     </div>
     </div>
       <div class="container-fluid">
-     {% for data in site.data.nyc %}
+     {% for data in site.data[page.city] %}
      {% if data.category == category.category %}
        {% if data.img != 'null' %}
         <div class="row">

@@ -2,7 +2,8 @@
 layout: cities
 title: New York City
 city: nyc
-template: nyc.html
+cityMeta: nyc-meta
+template: city.html
 ---
 
 New York's network infrastructure is a lot like the city itself: messy, sprawling, and at times near-incomprehensible. However, the city's tendency toward flux is a strange blessing for the infrastructure sightseer: markings and remnants of the network are almost everywhere, once you know how to look for them. 
