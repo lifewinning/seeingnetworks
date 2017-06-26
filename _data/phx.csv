@@ -1,2 +1,4 @@
 category,name,img,desc,lat,lon,coords
-pedestals,Cox Cable ,/img/phx/pedestals/cable-outside.png,"Cox provides TV, Internet, and digital phone service to the entire metro area.",,,
+pedestals,Cable TV & Internet ,/img/phx/pedestals/cable.png,"Cox provides TV, Internet, and digital phone service to the entire metro area.",,,
+pedestals,Phone & DSL (Roadside) ,/img/phx/pedestals/telco-road.png,"CenturyLink provides phone and DSL service to the entire metro area -- formerly Qwest.",,,
+pedestals,Phone & DSL (Building-side) ,/img/phx/pedestals/telco-home.png,"CenturyLink provides phone and DSL service to the entire metro area -- formerly Qwest.",,,
