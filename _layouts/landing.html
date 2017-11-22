@@ -23,9 +23,11 @@
   </p>
 
   <h2>Cities</h2>
-  {% for data in site.data.cities %}
-   <a href="{{ data.link }}">{{data.name}}</a>
-  {% endfor %}
+  <ul>
+    {% for data in site.data.cities %}
+      <li><a href="{{ data.link }}">{{data.name}}</a></li>
+    {% endfor %}
+  </ul>
   </div>
 </div>
 </div>
